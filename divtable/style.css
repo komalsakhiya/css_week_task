@@ -1,0 +1,22 @@
+.table{
+	display: table;
+	width:auto;
+	border:1px solid black;
+	border-spacing: 5px;
+	background-color: #DCDCDC;
+	margin-top:80px;
+	margin-left: 300px;
+
+}
+.table-row{
+	display:table-row;
+	width:auto;
+	border-collapse: collapse;
+}
+.table-col{
+	   display: table-cell;
+	float: left;
+	border:solid;
+	width: 200px;
+	border-collapse: collapse;
+}
