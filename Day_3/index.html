@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Task Day 3</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body class="color">
+
+	<!-- <div class="container-fluid">
+		<ul>
+			<li><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#" data-toggle="tooltip" title="Hooray!"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a><i class="fa fa-twitter" aria-hidden="true"></i>
+			</a></li>
+		
+		<ul class="border">
+			<li class="right"><a href="mailto:komalsakhiya21@gmail.com"><i class="fa fa-envelope" aria-hidden="true">  Email</i></a></li>	
+			<li class="right"><a href="tel:1236547899"><i class="fa fa-mobile" aria-hidden="true">  Mobile No.</i></a></li>
+		</ul>
+		</ul>
+
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<li><a href="#"><img src="1.jpeg"></a></li>
+					<li><a href="#">Page 1</a></li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+-->
+
+
+<header>
+	<div class="header_top">
+		<div class="social_icon">
+			<ul>
+				<li><a href="#" data-toggle="tooltip" title="Facebook" data-placement="bottom"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#" data-toggle="tooltip" title="instagram" data-placement="bottom"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#" data-toggle="tooltip" title="twitter" data-placement="bottom"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			</a>
+		</ul>	
+	</div>
+	<div class="contact_info">
+		<ul>
+			<li><a href="tel:1236547899"><i class="fa fa-mobile" aria-hidden="true"></i><label>9873452134 </label></a></li>
+			<li><a href="mailto:komalsakhiya21@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i><label>komalsakhiya21@gmail.com</label></a></li>
+		</ul>
+	</div>
+
+</div>
+<div class="header_buttom">
+	<div class="logo_img">
+		<img src="images/1.jpeg">
+	</div>
+	<div class="menu">
+		<nav class="nav_header">
+			<ul>
+				<li><a>Home</a></li>
+				<!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Solution</a></li> -->
+				<li class="dropdown"><a  onclick="myFunction()" class="dropbtn">Solution<span class="caret"></span></a>
+					<div id="myDropdown" class="dropdown-content">
+						<a href="#">Solution 1</a>
+						<a href="#">Solution 2</a>
+						<a href="#">Solution 3</a>
+					</div></li>
+					<li class="dropdown1"><a class="dropbtn" href="#">Service<span class="caret"></span></a>
+						<div class="dropdown-content">
+							<a href="#">Service 1</a>
+							<a href="#">Service 2</a>
+							<a href="#">Service 3</a>
+						</div></li>
+						<li>
+							<form class="search-container">
+								<input type="text" placeholder="Search.." name="search" id="search">
+								<button type="submit" class="search_button"><i class="fa fa-search"></i></button>
+							</form>
+						</li>
+					</ul>
+				</nav>	
+			</div>	
+		</div>
+
+	</header>
+	<section>
+		<div class="tabs_div">
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#tab-1">Tab-1</a></li>
+				<li><a data-toggle="tab" href="#tab-2">Tab-2</a></li>
+				<li><a data-toggle="tab" href="#tab-3">Tab-3</a></li>
+				<li class="disabled disabledTab"><a href="#">Tab- 4</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="tab-1" class="tab-pane fade in active">
+					<div class="img_box">
+						<div class="img_container">
+
+							<img src="images/2.jpeg">
+
+						</div>
+					</div>
+				</div>
+				<div id="tab-2" class="tab-pane fade">
+					<div class="img_box">
+						<div class="img_container">
+
+							<img src="images/3.jpeg">
+
+						</div>
+					</div>
+				</div>
+				<div id="tab-3" class="tab-pane fade ">
+					<div class="img_box">
+						<div class="img_container">
+
+							<img src="images/4.jpeg">
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+</body>
+</html>
