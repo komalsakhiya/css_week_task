@@ -1,0 +1,71 @@
+.color{
+	background-color: lightblue;
+}
+@font-face {
+	font-family: 'work_sansbold';
+	src: url('../font/worksans-bold-webfont.eot');
+	src: url('../font/worksans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/worksans-bold-webfont.woff2') format('woff2'),
+	url('../font/worksans-bold-webfont.woff') format('woff'),
+	url('../font/worksans-bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+@font-face {
+	font-family: 'work_sansregular';
+	src: url('../font/worksans-regular-webfont.eot');
+	src: url('../font/worksans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/worksans-regular-webfont.woff2') format('woff2'),
+	url('../font/worksans-regular-webfont.woff') format('woff'),
+	url('../font/worksans-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+th{
+	font-family: 'work_sansbold';
+	background-color: gray;
+	text-align: center;
+}
+td{
+	font-family: 'work_sansregular';
+}
+
+#loader{
+	content: url("../images/1.gif");
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#myDiv{
+	display: none;
+	padding: 30px;
+}
+textarea{
+	resize: none;
+}
+button{ 
+	 float: right;
+}
+img{
+	height: 15px;
+	width: 15px;
+}
+.row label{
+	font-family: 'work_sansbold';
+}
+.form_color{
+	background-color: pink;
+	border: 1px solid black;
+	padding: 5px;
+}
+.form-group textarea ,input[type=text],input[type=email]  {
+	font-family: 'work_sansregular';
+	}
+
