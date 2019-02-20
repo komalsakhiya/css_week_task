@@ -1,0 +1,154 @@
+body *{
+	box-sizing: border-box;
+}
+.bgcolor{
+	background-color: lightblue;
+}
+h3{
+	text-align: center
+}
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+table th,td{
+	padding: 10px;
+	border: 2px solid black;
+
+}
+th{
+	font-family: 'work_sansbold';
+}
+td{
+	font-family: 'work_sansregular';
+}
+#customers tr:nth-child(even)
+{
+	background-color: #E5E7E9;
+}
+
+#customers th{
+	background-color:  #909497;
+}
+
+
+.form_box{
+	
+	/*margin: 20px 500px;*/
+	/*background-color: #FFC0CB;*/
+	border-radius: 5px;
+	background-color: #F9E79F;
+	border: 2px solid black;
+	/*padding: 20px;*/
+	margin-top: 20px;
+	width: 600px;
+	margin-left: 300px;
+
+
+}
+.form_content textarea ,input[type=text],input[type=email]  {
+	width: 100%;
+	/*padding: 12px 20px;*/
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+
+	font-family: 'work_sansregular';
+}
+.form_content label{
+	width: 100%;
+	display:block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	font-family: 'work_sansbold';
+}
+span{
+	display: block;
+}
+textarea{
+	resize: none;
+	width:99%;
+}
+
+@font-face {
+	font-family: 'work_sansbold';
+	src: url('../font/worksans-bold-webfont.eot');
+	src: url('../font/worksans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/worksans-bold-webfont.woff2') format('woff2'),
+	url('../font/worksans-bold-webfont.woff') format('woff'),
+	url('../font/worksans-bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'work_sansregular';
+	src: url('../font/worksans-regular-webfont.eot');
+	src: url('../font/worksans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/worksans-regular-webfont.woff2') format('woff2'),
+	url('../font/worksans-regular-webfont.woff') format('woff'),
+	url('../font/worksans-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+#loader{
+	content: url("../images/1.gif");
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+#myDiv{
+	display: none;
+	padding: 30px;
+}
+button{
+	/*margin-top: 10px;*/
+	/*margin-bottom: 5px;*/
+	vertical-align: middle;
+	padding-bottom: 6px;
+	border-radius: 5px;
+}
+img{
+	vertical-align: middle;
+	height: 15px;
+	width: 15px;
+}
+.form_content{
+	padding: 10px;
+}
+input[type="checkbox"]{
+	display: none;
+}
+input[type="checkbox"] + label:before{
+	content: "";
+	display: inline-block;
+	height: 24px;
+	width: 20px;
+	position: absolute;
+	left: 0;
+	background-image: url(../images/3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+input[type="checkbox"] + label {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+input[type="checkbox"]:checked + label:before {
+	background-position: -17px 0px;
+}

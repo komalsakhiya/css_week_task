@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Task 2.1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body class="color" onload="myFunction()">
+	<div id="loader"></div>
+
+	
+
+	<div class="container-fluid" id="myDiv">
+		<div>
+			<h3 class="text-center">Emp Deatils:-</h3>
+			<div class="table-responsive">
+			<table class="table table-bordered ">
+				<thead>
+					<tr>
+						<th>Fname</th>
+						<th>Lname</th>
+						<th>Email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="danger">
+						<td>Komal</td>
+						<td>Sakhiya</td>
+						<td>komal@gmail.com</td>
+					</tr>
+					<tr class="success">
+						<td>foram</td>
+						<td>trada</td>
+						<td>f@gmail.com</td>
+					</tr>
+					<tr class="warning">
+						<td>akshita</td>
+						<td>karetiya</td>
+						<td>a@gmail.com</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-4 form_color">
+				<form>
+					<div class="col-sm-6 form-group">
+						<label>First Name</label>
+						<input type="text" name="fname" class="form-control">
+					</div>
+					<div class="col-sm-6 form-group">
+						<label>Last Name</label>
+						<input type="text" name="lname" class="form-control">
+					</div>
+					<div class="col-sm-12 form-group">
+						<label>Email</label>
+						<input type="email" name="email" class="form-control">
+
+					</div>
+					<div class="col-sm-6 form-group">
+						<label>Gender</label>
+						<div class="radio">
+							<label><input type="radio" name="gender" checked>Female</label>	
+						</div>
+						<div class="radio">
+							
+							<label><input type="radio" name="gender" checked>Male</label>	
+						</div>		
+					</div>
+					<div class="col-sm-6 form-group">
+						<label>Technology</label>
+						<div class="checkbox">
+							<label><input type="checkbox" value="">PHP</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" value="">JAVA</label>
+						</div>
+						<div class="checkbox ">
+							<label><input type="checkbox" value="">Python</label>
+						</div>
+
+					</div>
+					<div class="col-sm-12 form-group">
+						<label>About me</label>
+						<textarea class="form-control" rows="4"></textarea>
+
+					</div>
+					<div class="col-sm-12">
+						<button class="btn btn-primary" type="button">Save <img src="images/2.png"></button>
+						
+					</div>
+				</form>
+			</div>		
+		</div>
+	</div>
+
+
+</body>
+</html>
