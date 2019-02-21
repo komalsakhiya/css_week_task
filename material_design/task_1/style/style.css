@@ -1,0 +1,23 @@
+.mdc-card{
+	padding: 20px 50px;
+	margin: 20px 50px;
+	background-color: lightpink;
+
+}
+.mdc-text-field, .mdc-layout-grid__inner{
+	margin-top: 15px;
+}
+
+h1{
+	font-weight: normal;	
+}
+.mdc-button{
+	margin-left: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: 1px solid;
+}
+.mdc-switch{
+	margin-top: 10px;
+	margin-left: 20px;
+}
