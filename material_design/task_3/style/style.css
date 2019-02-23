@@ -1,0 +1,181 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+ .header_top{
+	background-color: #364890;
+	
+}
+.mdc-list-item{
+	display: inline-block;
+	color: white
+}
+.contact li{
+	border-right: 1px solid white;
+	color: white;
+}
+.contact li:last-child{
+	border-right: none;
+}
+.header_middle{
+	background-color: white;
+}
+.txt_clr{
+	color: black;
+}
+.mdc-button--dense{
+	border-radius: 5px;
+	border:none;
+	outline: none;
+	padding: 10px;
+}
+.material-icons{
+	margin:5px;
+}
+
+.btn_signin{
+	background-color: #eda33a;
+}
+.btn_reg{
+	background-color: #d7363b;
+	margin-left: 5px;
+}
+.header_middle img{
+	height: 60px;
+	width: 60px;
+	margin-left: 200px;
+}
+
+.menu{
+	margin-left: 150px;
+	margin-top: 10px;
+	float: right;
+}
+
+.header_buttom{
+	background-color: #408fc8;
+
+}
+.mdc-text-field{
+	box-sizing: border-box;
+	height:40px;
+	margin: 10px;
+	width: 35%;
+	margin-left: 440px;
+}
+.btn_letsgo{
+	background-color: #f3c458;
+	width:60%;
+	height: 100%;
+	border-radius: 0;
+}
+.bg_image{
+	background-image: url("../images/2.png");
+	height: 400px;
+	width: 100%;
+	position: relative;
+	background-size: 100% 100%;
+
+}
+.mdc-layout-grid{
+	margin:0;
+	padding: 0;
+}
+.head1{
+
+    background-color: orange;
+    text-align: center;
+    border: 1px solid orange;
+    color: white;
+    text-shadow: 1px 1px;
+  }
+  .content1{
+
+    border: 1px solid orange;
+    padding: 12px;
+  }
+  .foot1{
+
+    color: orange;
+  }
+  .head2{
+
+    background-color: maroon;
+    text-align: center;
+    border: 1px solid maroon;
+    color: white;
+    text-shadow: 1px 1px;
+  }
+  .content2{
+
+    border: 1px solid maroon;
+    padding: 12px;
+  }
+  .foot2{
+
+    color: maroon;
+  }
+  .head3{
+
+    background-color: lightblue;
+    text-align: center;
+    border: 1px solid lightblue;
+    color: white;
+    text-shadow: 1px 1px;
+  }
+  .content3{
+
+    border: 1px solid lightblue;
+    padding: 12px;
+  }
+  .foot3{
+
+    color: lightblue;
+  }
+  .head4{
+
+    background-color: #7D3C98;
+    text-align: center;
+    border: 1px solid #7D3C98;
+    color: white;
+    text-shadow: 1px 1px;
+  }
+  .content4{
+
+    border: 1px solid #7D3C98;
+    padding: 12px;
+  }
+  .foot4{
+
+    color: #7D3C98;
+  }
+  .head5{
+
+    background-color: #000080;
+    text-align: center;
+    border: 1px solid #000080;
+    color: white;
+    text-shadow: 1px 1px;
+  }
+  .content5{
+
+    border: 1px solid #000080;
+    padding: 12px;
+  }
+  .foot5{
+
+    color: #000080;
+  }
+  .abot_us{
+  	background-color: #f3f3f3;
+  	margin-top: 20px;
+  }
+.about_img img{
+	width: 300px;
+	height: 350px;
+	border-radius: 50%;
+}
+.btn_readmore{
+	background-color: #d52c31;
+	color: white;
+}
