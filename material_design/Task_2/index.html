@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Material design task 2</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+
+  <div class="mdc-drawer__header">
+    <header class="mdc-top-app-bar app-bar" id="app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          <img src="images/1.jpeg" class="gmailimg">
+          <span class="mdc-top-app-bar__title">Gmail</span>
+          <div class="mdc-text-field   mdc-text-field--no-label">
+            <i class="material-icons mdc-list-item__graphic search" aria-hidden="true">search</i>
+            <input type="text" id="my-text-field" class="mdc-text-field__input" placeholder="Search mail" aria-label="Label">
+            <!-- <label class="mdc-floating-label" for="my-text-field">Search mail</label> -->  
+          </div>
+        </section>
+      </div>
+    </header>
+  </div>
+  <aside class="mdc-drawer mdc-drawer--dismissible">
+    <div class="mdc-drawer__content">
+      <div class="mdc-list">
+        <a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+          <span class="mdc-list-item__text">Inbox</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>
+          <span class="mdc-list-item__text">Star</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+          <span class="mdc-list-item__text">Sent mail</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+          <span class="mdc-list-item__text">Drafts</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">email</i>
+          <span class="mdc-list-item__text">All mail</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete</i>
+          <span class="mdc-list-item__text">Trash</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">error</i>
+          <span class="mdc-list-item__text">Spam</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="mdc-drawer-app-content">
+ <!--  <header class="mdc-top-app-bar app-bar" id="app-bar">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+        <span class="mdc-top-app-bar__title">Dismissible Drawer</span>
+      </section>
+    </div>
+  </header> -->
+
+  <main class="main-content" id="main-content">
+    <div class="mdc-top-app-bar--fixed-adjust">
+
+      <div class="mdc-tab-bar" role="tablist">
+        <div class="mdc-tab-scroller">
+          <div class="mdc-tab-scroller__scroll-area">
+            <div class="mdc-tab-scroller__scroll-content">
+              <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__icon material-icons" aria-hidden="true">inbox</span>
+                  <span class="mdc-tab__text-label">Primary</span>
+                </span>
+                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
+              <button class="mdc-tab mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__icon material-icons" aria-hidden="true">group</span>
+                  <span class="mdc-tab__text-label">Social</span>
+                </span>
+                <span class="mdc-tab-indicator mdc-tab-indicator">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
+              <button class="mdc-tab mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__icon material-icons" aria-hidden="true">loyalty</span>
+                  <span class="mdc-tab__text-label">Promotions</span>
+                </span>
+                <span class="mdc-tab-indicator mdc-tab-indicator">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="mdc-list">
+        <li class="mdc-list-item" tabindex="0">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-3">
+
+              <div class="mdc-form-field">
+                <div class="mdc-checkbox">
+                  <input type="checkbox"
+                  class="mdc-checkbox__native-control"
+                  id="checkbox-1"/>
+                  <div class="mdc-checkbox__background">
+                    <svg class="mdc-checkbox__checkmark"
+                    viewBox="0 0 24 24">
+                    <path class="mdc-checkbox__checkmark-path"
+                    fill="none"
+                    d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                  </svg>
+                  <div class="mdc-checkbox__mixedmark"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star_border</i> --><button id="add-to-favorites"
+            class="mdc-icon-button"
+            aria-label="Add to favorites"
+            aria-hidden="true"
+            aria-pressed="false">
+            <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">star</i>
+            <i class="material-icons mdc-icon-button__icon">star_border</i>
+          </button>
+          <i class="material-icons mdc-list-item__graphic imp" aria-hidden="true">label_important</i>
+          <span class="mdc-list-item__text mdc-typography--headline6">Foram</span>
+        </div>
+
+        <div class="mdc-layout-grid__cell--span-7 ">
+          <p class="mdc-typography--headline6">New Trending Jobs for Php Developer, Fresher, Web Developer </p>
+        </div>
+        <div class="mdc-layout-grid__cell--span-2 ">
+          <p class="mdc-typography--headline6 right">Feb 23</p>
+        </div>
+      </div>
+    </li>
+    <hr class="mdc-list-divider">
+    <li class="mdc-list-item">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell--span-3">
+
+          <div class="mdc-form-field">
+            <div class="mdc-checkbox">
+              <input type="checkbox"
+              class="mdc-checkbox__native-control"
+              id="checkbox-1"/>
+              <div class="mdc-checkbox__background">
+                <svg class="mdc-checkbox__checkmark"
+                viewBox="0 0 24 24">
+                <path class="mdc-checkbox__checkmark-path"
+                fill="none"
+                d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+          </div>
+
+        </div>
+        <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star_border</i> -->
+        <button id="add-to-favorites"
+            class="mdc-icon-button"
+            aria-label="Add to favorites"
+            aria-hidden="true"
+            aria-pressed="false">
+            <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">star</i>
+            <i class="material-icons mdc-icon-button__icon">star_border</i>
+          </button>
+        <i class="material-icons mdc-list-item__graphic imp" aria-hidden="true">label_important</i>
+
+        <span class="mdc-list-item__text mdc-typography--headline6">Happy</span>
+      </div>
+      <div class="mdc-layout-grid__cell--span-7">
+        <p class="mdc-typography--headline6">New Trending Jobs for Php Developer, Fresher, Web Developer</p>
+      </div>
+      <div class="mdc-layout-grid__cell--span-2">
+        <p class="mdc-typography--headline6 right">Feb 21</p>
+      </div>
+    </div>
+  </li>
+</hr>
+<hr class="mdc-list-divider">
+<li class="mdc-list-item">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-3">
+
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star_border</i> -->
+    <button id="add-to-favorites"
+            class="mdc-icon-button"
+            aria-label="Add to favorites"
+            aria-hidden="true"
+            aria-pressed="false">
+            <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">star</i>
+            <i class="material-icons mdc-icon-button__icon">star_border</i>
+          </button>
+    <i class="material-icons mdc-list-item__graphic imp" aria-hidden="true">label_important</i>
+    <span class="mdc-list-item__text mdc-typography--headline6">Akshita</span>
+  </div>
+  <div class="mdc-layout-grid__cell--span-7">
+    <p class="mdc-typography--headline6">New Trending Jobs for Php Developer, Fresher, Web Developer</p>
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <p class="mdc-typography--headline6 right">Feb 21</p>
+  </div>
+</div>
+</li>
+<hr class="mdc-list-divider">
+<li class="mdc-list-item">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-3">
+
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star_border</i> -->
+    <button id="add-to-favorites"
+            class="mdc-icon-button"
+            aria-label="Add to favorites"
+            aria-hidden="true"
+            aria-pressed="false">
+            <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">star</i>
+            <i class="material-icons mdc-icon-button__icon">star_border</i>
+          </button>
+    <i class="material-icons mdc-list-item__graphic imp" aria-hidden="true">label_important</i>
+    <span class="mdc-list-item__text">Linkdin</span>
+  </div>
+  <div class="mdc-layout-grid__cell--span-7">
+    <p>New Trending Jobs for Php Developer, Fresher, Web Developer</p>
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <p class="right" >Feb 21</p>
+  </div>
+</div>
+</li>
+<hr class="mdc-list-divider">
+<li class="mdc-list-item">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-3">
+
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star_border</i> -->
+    <button id="add-to-favorites"
+            class="mdc-icon-button"
+            aria-label="Add to favorites"
+            aria-hidden="true"
+            aria-pressed="false">
+            <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">star</i>
+            <i class="material-icons mdc-icon-button__icon">star_border</i>
+          </button>
+    <i class="material-icons mdc-list-item__graphic imp" aria-hidden="true">label_important</i>
+    <span class="mdc-list-item__text mdc-typography--headline6">Happy</span>
+  </div>
+  <div class="mdc-layout-grid__cell--span-7">
+    <p  class="mdc-typography--headline6">New Trending Jobs for Php Developer, Fresher, Web Developer</p>
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <p class="mdc-typography--headline6 right">Feb 21</p>
+  </div>
+</div>
+</li>
+<hr class="mdc-list-divider">
+<li class="mdc-list-item">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-3">
+
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star_border</i> -->
+    <button id="add-to-favorites"
+            class="mdc-icon-button"
+            aria-label="Add to favorites"
+            aria-hidden="true"
+            aria-pressed="false">
+            <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">star</i>
+            <i class="material-icons mdc-icon-button__icon">star_border</i>
+          </button>
+    <i class="material-icons mdc-list-item__graphic imp" aria-hidden="true">label_important</i>
+    <span class="mdc-list-item__text">facebook</span>
+  </div>
+  <div class="mdc-layout-grid__cell--span-7">
+    <p>New Trending Jobs for Php Developer, Fresher, Web Developer</p>
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <p class="right" >Feb 21</p>
+  </div>
+</div>
+</li>
+<hr class="mdc-list-divider">
+<li class="mdc-list-item">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-3">
+
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star_border</i> -->
+    <button id="add-to-favorites"
+            class="mdc-icon-button"
+            aria-label="Add to favorites"
+            aria-hidden="true"
+            aria-pressed="false">
+            <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">star</i>
+            <i class="material-icons mdc-icon-button__icon">star_border</i>
+          </button>
+    <i class="material-icons mdc-list-item__graphic imp" aria-hidden="true">label_important</i>
+    <span class="mdc-list-item__text">Happy</span>
+  </div>
+  <div class="mdc-layout-grid__cell--span-7">
+    <p>New Trending Jobs for Php Developer, Fresher, Web Developer</p>
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <p class="right"> Feb 21</p>
+  </div>
+</div>
+</li>
+<hr class="mdc-list-divider">
+<li class="mdc-list-item">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-3">
+
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star_border</i> -->
+    <button id="add-to-favorites"
+            class="mdc-icon-button"
+            aria-label="Add to favorites"
+            aria-hidden="true"
+            aria-pressed="false">
+            <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">star</i>
+            <i class="material-icons mdc-icon-button__icon">star_border</i>
+          </button>
+    <i class="material-icons mdc-list-item__graphic imp"  aria-hidden="true">label_important</i>
+    <span class="mdc-list-item__text">Happy</span>
+  </div>
+  <div class="mdc-layout-grid__cell--span-7">
+    <p>New Trending Jobs for Php Developer, Fresher, Web Developer</p>
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <p class="right">Feb 21</p>
+  </div>
+</div>
+</li>
+<hr class="mdc-list-divider">
+<li class="mdc-list-item">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-3">
+
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star_border</i> -->
+    <button id="add-to-favorites"
+            class="mdc-icon-button"
+            aria-label="Add to favorites"
+            aria-hidden="true"
+            aria-pressed="false">
+            <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">star</i>
+            <i class="material-icons mdc-icon-button__icon">star_border</i>
+          </button>
+    <i class="material-icons mdc-list-item__graphic imp" aria-hidden="true">label_important</i>
+    <span class="mdc-list-item__text">Happy</span>
+  </div>
+  <div class="mdc-layout-grid__cell--span-7">
+    <p>New Trending Jobs for Php Developer, Fresher, Web Developer</p>
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <p class="right" >Feb 21</p>
+  </div>
+</div>
+</li>
+<hr class="mdc-list-divider">
+<li class="mdc-list-item">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-3">
+
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star_border</i> -->
+    <button id="add-to-favorites"
+            class="mdc-icon-button"
+            aria-label="Add to favorites"
+            aria-hidden="true"
+            aria-pressed="false">
+            <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">star</i>
+            <i class="material-icons mdc-icon-button__icon">star_border</i>
+          </button>
+    <i class="material-icons mdc-list-item__graphic imp" aria-hidden="true" >label_important</i>
+    <span class="mdc-list-item__text mdc-typography--headline6">Happy</span>
+  </div>
+  <div class="mdc-layout-grid__cell--span-7">
+    <p class="mdc-typography--headline6">New Trending Jobs for Php Developer, Fresher, Web Developer</p>
+  </div>
+  <div class="mdc-layout-grid__cell--span-2">
+    <p class="mdc-typography--headline6 right" >Feb 21</p>
+  </div>
+</div>
+</li>
+
+</ul>
+</main>
+</div>
+</body>
+
+
+</body>
+
+<script type="text/javascript">
+
+  mdc.autoInit();
+
+  var drawer = new mdc.drawer.MDCDrawer(document.querySelector('.mdc-drawer'));
+  const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+  topAppBar.setScrollTarget(document.getElementById('main-content'));
+  topAppBar.listen('MDCTopAppBar:nav', () => {
+    drawer.open = !drawer.open;
+  });
+  mdc.tabBar.MDCTabBar.attachTo(document.querySelector('.mdc-tab-bar'));
+  var toggleButton = new mdc.iconButton.MDCIconButtonToggle(document.getElementById('add-to-favorites'));
+
+</script>
+</html>

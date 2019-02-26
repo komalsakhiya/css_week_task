@@ -1,0 +1,74 @@
+body{
+margin: 0;
+display: flex;
+height: 100vh;
+}
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  overflow: auto;
+  height: 100%;
+}
+
+.app-bar {
+  position: absolute;
+}
+
+/*// only apply this style if below top app bar
+.mdc-top-app-bar {
+  z-index: 7;
+}*/
+.mdc-drawer{
+	margin-top: 65px;
+}
+.mdc-drawer__header{
+	padding: 0;
+	
+}
+.mdc-top-app-bar{
+	background-color: lightgray;
+	color: black;
+}
+.gmailimg{
+	height: 25px;
+	width: 30px;
+	border-radius: 5px;
+}
+.mdc-typography--headline6{
+	font-size: 1rem;
+	font-weight: bolder;
+
+}
+.mdc-checkbox,.material-icons {
+	vertical-align: middle;
+	margin-top: 10px;
+}
+/*.mdc-list-item__text{
+	margin-top: 35px;
+}*/
+.mdc-layout-grid__inner{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.right{
+	float: right;
+}
+.mdc-text-field{
+	box-sizing: border-box;
+	height:40px;
+	margin: 10px;
+	width: 50%;
+}
+.search{
+	margin-left: 9px;
+	margin-right: 0;
+}
+.imp{
+	margin-left: -20px;
+}
+
